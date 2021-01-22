@@ -1,0 +1,17 @@
+# Jazzy config
+module: Demo
+author: thejohnlima
+author_url: https://github.com/thejohnlima
+copyright: '© 2021 [thejohnlima](https://github.com/thejohnlima).'
+swift_version: 5.3.2
+xcodebuild_arguments: [clean,build,-workspace,Demo.xcworkspace,-scheme,Demo]
+min_acl: internal
+hide_documentation_coverage: false
+theme: apple
+output: 'docs/swift_output'
+use_safe_filenames: true
+undocumented_text: 'Most of the properties; overrideable methods and functions; implementation of protocols do not need to have a description. Adding so pollutes the source file with comments. 🤓'
+
+exclude: 
+  - '*AppDelegate*'
+  - '*ViewController*'
